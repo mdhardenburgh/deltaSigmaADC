@@ -1,7 +1,15 @@
-Circuit: * D:\Google Drive\Delta Technologies\Projects\Delta Sigma ADC\SPICE\deltaSigmaFirstOrderModulator.asc
+Circuit: * D:\Google Drive\Delta Technologies\Projects\deltaSigmaADC\SPICE\deltaSigmaFirstOrderModulator.asc
 
 Limiting rise time of source v5 to 5e-007
 Limiting fall time of source v5 to 5e-007
+WARNING: Node N009 is floating.
+
+Instance "m:u3:6": Length shorter than recommended for a level 2 MOSFET.
+Instance "m:u3:5": Length shorter than recommended for a level 2 MOSFET.
+Instance "m:u3:4": Length shorter than recommended for a level 2 MOSFET.
+Instance "m:u3:3": Length shorter than recommended for a level 2 MOSFET.
+Instance "m:u3:2": Length shorter than recommended for a level 2 MOSFET.
+Instance "m:u3:1": Length shorter than recommended for a level 2 MOSFET.
 Direct Newton iteration failed to find .op point.  (Use ".option noopiter" to skip.)
 Starting Gmin stepping
 Gmin = 10
@@ -15,35 +23,111 @@ Gmin = 1.6455e-006
 Gmin = 1.76685e-007
 Gmin = 1.89714e-008
 Gmin = 2.03704e-009
-Gmin = 2.18725e-010
 vernier = 0.5
-Gmin = 3.6696e-011
 vernier = 0.25
 vernier = 0.125
 vernier = 0.0625
 vernier = 0.03125
+Gmin = 8.3437e-010
 vernier = 0.015625
 vernier = 0.0078125
 vernier = 0.00390625
 vernier = 0.00195313
 vernier = 0.000976563
 vernier = 0.000488281
-Gmin = 3.6696e-011
 Gmin = 0
 Gmin stepping failed
 
 Starting source stepping with srcstepmethod=0
 Source Step = 3.0303%
-Source Step = 33.3333%
-Source Step = 63.6364%
-Source Step = 85.0379%
-Source Step = 86.9318%
-Source Step = 88.8258%
-Source Step = 90.7197%
-Source Step = 92.6136%
-Source Step = 94.5076%
-vernier = 0.09375
-Source Step = 97.3485%
+vernier = 0.25
+Source Step = 0.0177557%
+Source Step = 0.0473485%
+Source Step = 0.0769413%
+Source Step = 0.106534%
+Source Step = 0.136127%
+vernier = 0.00146484
+Source Step = 0.170159%
+Source Step = 0.214548%
+Source Step = 0.258937%
+Source Step = 0.303326%
+Source Step = 0.347715%
+vernier = 0.00219727
+Source Step = 0.396544%
+Source Step = 0.463127%
+Source Step = 0.529711%
+Source Step = 0.596295%
+Source Step = 0.662879%
+vernier = 0.0032959
+Source Step = 0.732792%
+Source Step = 0.832667%
+Source Step = 0.932543%
+Source Step = 1.03242%
+Source Step = 1.13229%
+Source Step = 1.23217%
+vernier = 0.00494385
+Source Step = 1.38198%
+Source Step = 1.5318%
+Source Step = 1.68161%
+Source Step = 1.83142%
+Source Step = 1.98124%
+vernier = 0.00741577
+Source Step = 2.19847%
+Source Step = 2.42319%
+Source Step = 2.64791%
+Source Step = 2.87263%
+Source Step = 3.09735%
+vernier = 0.0111237
+Source Step = 3.41196%
+Source Step = 3.74904%
+Source Step = 4.08612%
+Source Step = 4.4232%
+Source Step = 4.76028%
+vernier = 0.0166855
+Source Step = 5.21534%
+Source Step = 5.72096%
+Source Step = 6.22658%
+Source Step = 6.7322%
+Source Step = 7.23782%
+vernier = 0.0250282
+Source Step = 7.89513%
+Source Step = 8.65356%
+Source Step = 9.41199%
+Source Step = 10.1704%
+Source Step = 10.9289%
+vernier = 0.0375423
+Source Step = 11.8769%
+Source Step = 13.0145%
+Source Step = 14.1522%
+Source Step = 15.2898%
+Source Step = 16.4275%
+vernier = 0.0563135
+Source Step = 17.7927%
+Source Step = 19.4991%
+Source Step = 21.2056%
+Source Step = 22.9121%
+Source Step = 24.6185%
+vernier = 0.0844703
+Source Step = 26.581%
+Source Step = 29.1407%
+Source Step = 31.7004%
+Source Step = 34.2601%
+Source Step = 36.8198%
+vernier = 0.126705
+Source Step = 39.6355%
+Source Step = 43.475%
+Source Step = 47.3146%
+Source Step = 51.1541%
+Source Step = 54.9937%
+vernier = 0.190058
+Source Step = 59.0252%
+Source Step = 64.7846%
+Source Step = 70.5439%
+Source Step = 76.3033%
+Source Step = 82.0626%
+Source Step = 87.8219%
+vernier = 0.285087
+Source Step = 96.4609%
 Source Step = 100%
 Source stepping succeeded in finding the operating point.
 
@@ -63,22 +147,34 @@ Ignoring empty pin current: Ix(u8:9)
 Ignoring empty pin current: Ix(u8:10)
 Ignoring empty pin current: Ix(u8:11)
 Ignoring empty pin current: Ix(u8:12)
+Heightened Def Con from 9.015e-005 to 9.0154e-005
+Heightened Def Con from 0.00425015 to 0.00425015
+Heightened Def Con from 0.00502015 to 0.00502015
+Heightened Def Con from 0.00608015 to 0.00608015
+Heightened Def Con from 0.00733015 to 0.00733015
+Heightened Def Con from 0.00739015 to 0.00739015
+Heightened Def Con from 0.00992015 to 0.00992015
+Heightened Def Con from 0.0108401 to 0.0108402
+Heightened Def Con from 0.0118801 to 0.0118802
+Heightened Def Con from 0.0120601 to 0.0120602
+Heightened Def Con from 0.0125901 to 0.0125902
+Heightened Def Con from 0.0126901 to 0.0126902
 
-Date: Mon Mar 25 20:08:52 2019
-Total elapsed time: 10.248 seconds.
+Date: Tue Mar 26 00:35:16 2019
+Total elapsed time: 45.306 seconds.
 
 tnom = 27
 temp = 27
 method = modified trap
-totiter = 538522
-traniter = 535826
-tranpoints = 149370
-accept = 115969
-rejected = 33401
-matrix size = 50
-fillins = 64
+totiter = 2549923
+traniter = 2543989
+tranpoints = 526909
+accept = 389533
+rejected = 137388
+matrix size = 73
+fillins = 61
 solver = Normal
-Thread vector: 15.6/7.4[4] 4.9/8.5[1] 1.9/2.8[1] 0.2/1.0[1]  2592/500
-Matrix Compiler1: 4.45 KB object code size  1.3/0.6/[0.3]
-Matrix Compiler2: 5.54 KB object code size  0.7/0.9/[0.4]
+Thread vector: 14.5/8.6[3] 4.5/5.9[1] 4.9/2.8[3] 0.4/1.2[1]  2592/500
+Matrix Compiler1: 5.62 KB object code size  1.4/0.6/[0.4]
+Matrix Compiler2: 7.46 KB object code size  0.9/1.4/[0.6]
 
