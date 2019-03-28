@@ -1,18 +1,19 @@
-Circuit: * D:\Google Drive\Delta Technologies\Projects\Delta Sigma ADC\SPICE\deltaSigmaFirstOrderModulator.asc
+Circuit: * D:\Google Drive\Delta Technologies\Projects\deltaSigmaADC\SPICE\deltaSigmaFirstOrderModulator.asc
 
-<<<<<<< HEAD
-Limiting rise time of source v5 to 1.65e-007
-Limiting fall time of source v5 to 1.65e-007
+Limiting rise time of source v5 to 5e-007
+Limiting fall time of source v5 to 5e-007
 Instance "m:u3:6": Length shorter than recommended for a level 2 MOSFET.
 Instance "m:u3:5": Length shorter than recommended for a level 2 MOSFET.
 Instance "m:u3:4": Length shorter than recommended for a level 2 MOSFET.
 Instance "m:u3:3": Length shorter than recommended for a level 2 MOSFET.
 Instance "m:u3:2": Length shorter than recommended for a level 2 MOSFET.
 Instance "m:u3:1": Length shorter than recommended for a level 2 MOSFET.
-=======
-Limiting rise time of source v5 to 5e-007
-Limiting fall time of source v5 to 5e-007
->>>>>>> parent of 344ed83... Simplified the first order modulator
+Instance "m:u1:6": Length shorter than recommended for a level 2 MOSFET.
+Instance "m:u1:5": Length shorter than recommended for a level 2 MOSFET.
+Instance "m:u1:4": Length shorter than recommended for a level 2 MOSFET.
+Instance "m:u1:3": Length shorter than recommended for a level 2 MOSFET.
+Instance "m:u1:2": Length shorter than recommended for a level 2 MOSFET.
+Instance "m:u1:1": Length shorter than recommended for a level 2 MOSFET.
 Direct Newton iteration failed to find .op point.  (Use ".option noopiter" to skip.)
 Starting Gmin stepping
 Gmin = 10
@@ -20,90 +21,513 @@ Gmin = 1.07374
 Gmin = 0.115292
 Gmin = 0.0123794
 Gmin = 0.00132923
-Gmin = 0.000142725
-Gmin = 1.5325e-005
-Gmin = 1.6455e-006
-Gmin = 1.76685e-007
-Gmin = 1.89714e-008
-Gmin = 2.03704e-009
-Gmin = 2.18725e-010
 vernier = 0.5
-Gmin = 3.6696e-011
 vernier = 0.25
 vernier = 0.125
 vernier = 0.0625
+Gmin = 0.00100083
 vernier = 0.03125
 vernier = 0.015625
-<<<<<<< HEAD
-vernier = 0.0208333
-Gmin = 8.01435e-010
-vernier = 0.0277778
-vernier = 0.037037
-Gmin = 7.46995e-010
-vernier = 0.0493827
-Gmin = 6.68858e-010
-vernier = 0.0658435
-vernier = 0.0877914
-Gmin = 5.56e-010
-vernier = 0.117055
-vernier = 0.156073
-Gmin = 4.14773e-010
-vernier = 0.208098
-Gmin = 2.6252e-010
-vernier = 0.277464
-vernier = 0.369952
-Gmin = 1.23236e-010
-vernier = 0.493269
-vernier = 0.657691
-Gmin = 3.79026e-011
-vernier = 0.876922
-Gmin = 6.27641e-012
-vernier = 1
-Gmin = 6.73925e-013
-Gmin = 0
-Gmin stepping succeeded in finding the operating point.
-
-Heightened Def Con from 0.000405949 to 0.000405953
-Heightened Def Con from 0.000475249 to 0.000475253
-Heightened Def Con from 0.00230675 to 0.00230675
-Heightened Def Con from 0.00231005 to 0.00231005
-Heightened Def Con from 0.00279185 to 0.00279185
-Heightened Def Con from 0.00313835 to 0.00313835
-Heightened Def Con from 0.00355415 to 0.00355415
-Heightened Def Con from 0.00547145 to 0.00547145
-Heightened Def Con from 0.00562985 to 0.00562985
-Heightened Def Con from 0.00575195 to 0.00575195
-Heightened Def Con from 0.00600605 to 0.00600605
-Heightened Def Con from 0.00640535 to 0.00640535
-Heightened Def Con from 0.0301554 to 0.0301554
-
-Date: Wed Mar 27 23:27:16 2019
-Total elapsed time: 28.746 seconds.
-=======
 vernier = 0.0078125
 vernier = 0.00390625
 vernier = 0.00195313
+Gmin = 0.00100083
 vernier = 0.000976563
 vernier = 0.000488281
-Gmin = 3.6696e-011
 Gmin = 0
 Gmin stepping failed
 
 Starting source stepping with srcstepmethod=0
 Source Step = 3.0303%
-Source Step = 33.3333%
-Source Step = 63.6364%
-Source Step = 85.0379%
-Source Step = 86.9318%
-Source Step = 88.8258%
-Source Step = 90.7197%
-Source Step = 92.6136%
-Source Step = 94.5076%
-vernier = 0.09375
-Source Step = 97.3485%
+vernier = 0.25
+Source Step = 0.0177557%
+Source Step = 0.0473485%
+Source Step = 0.0769413%
+Source Step = 0.106534%
+Source Step = 0.136127%
+vernier = 0.00146484
+Source Step = 0.170159%
+Source Step = 0.214548%
+Source Step = 0.258937%
+Source Step = 0.303326%
+Source Step = 0.347715%
+vernier = 0.00219727
+Source Step = 0.396544%
+Source Step = 0.463127%
+Source Step = 0.529711%
+Source Step = 0.596295%
+Source Step = 0.662879%
+vernier = 0.0032959
+Source Step = 0.732792%
+Source Step = 0.832667%
+Source Step = 0.932543%
+Source Step = 1.03242%
+Source Step = 1.13229%
+Source Step = 1.23217%
+vernier = 0.00494385
+Source Step = 1.38198%
+Source Step = 1.5318%
+Source Step = 1.68161%
+Source Step = 1.83142%
+Source Step = 1.98124%
+vernier = 0.00741577
+Source Step = 2.19847%
+Source Step = 2.42319%
+Source Step = 2.64791%
+Source Step = 2.87263%
+Source Step = 3.09735%
+vernier = 0.0111237
+Source Step = 3.41196%
+Source Step = 3.74904%
+Source Step = 4.08612%
+Source Step = 4.4232%
+Source Step = 4.76028%
+vernier = 0.0166855
+Source Step = 5.21534%
+Source Step = 5.72096%
+Source Step = 6.22658%
+Source Step = 6.7322%
+Source Step = 7.23782%
+vernier = 0.0250282
+Source Step = 7.89513%
+Source Step = 8.65356%
+Source Step = 9.41199%
+Source Step = 10.1704%
+Source Step = 10.9289%
+vernier = 0.0375423
+Source Step = 11.8769%
+Source Step = 13.0145%
+Source Step = 14.1522%
+Source Step = 15.2898%
+Source Step = 16.4275%
+vernier = 0.0563135
+Source Step = 17.7927%
+Source Step = 19.4991%
+Source Step = 21.2056%
+Source Step = 22.9121%
+Source Step = 24.6185%
+vernier = 0.0844703
+Source Step = 26.581%
+Source Step = 29.1407%
+Source Step = 31.7004%
+Source Step = 34.2601%
+Source Step = 36.8198%
+vernier = 0.126705
+Source Step = 39.6355%
+Source Step = 43.475%
+Source Step = 47.3146%
+Source Step = 51.1541%
+Source Step = 54.9937%
+vernier = 0.190058
+Source Step = 59.0252%
+Source Step = 64.7846%
+Source Step = 70.5439%
+Source Step = 76.3033%
+Source Step = 82.0626%
+Source Step = 87.8219%
+vernier = 0.285087
+Source Step = 96.4609%
+Source Step = 97.5442%
+Source Step = 97.5779%
+Source Step = 97.6117%
+Source Step = 97.6454%
+Source Step = 97.6792%
+Source Step = 97.7129%
+Source Step = 97.7467%
+Source Step = 97.7804%
+Source Step = 97.8141%
+Source Step = 97.8479%
+Source Step = 97.8816%
+Source Step = 97.9154%
+Source Step = 97.9491%
+Source Step = 97.9829%
+Source Step = 98.0166%
+Source Step = 98.0504%
+Source Step = 98.0841%
+Source Step = 98.1179%
+Source Step = 98.1516%
+Source Step = 98.1854%
+Source Step = 98.2191%
+Source Step = 98.2528%
+Source Step = 98.2866%
+Source Step = 98.3203%
+Source Step = 98.3541%
+Source Step = 98.3878%
+Source Step = 98.4216%
+Source Step = 98.4553%
+Source Step = 98.4891%
+Source Step = 98.5228%
+Source Step = 98.5566%
+Source Step = 98.5903%
+Source Step = 98.6241%
+Source Step = 98.6578%
+Source Step = 98.6915%
+Source Step = 98.7253%
+Source Step = 98.759%
+Source Step = 98.7928%
+Source Step = 98.8265%
+Source Step = 98.8603%
+Source Step = 98.894%
+Source Step = 98.9278%
+Source Step = 98.9615%
+Source Step = 98.9953%
+Source Step = 99.029%
+Source Step = 99.0628%
+Source Step = 99.0965%
+Source Step = 99.1302%
+Source Step = 99.164%
+Source Step = 99.1977%
+Source Step = 99.2315%
+Source Step = 99.2652%
+Source Step = 99.299%
+Source Step = 99.3327%
+Source Step = 99.3665%
+Source Step = 99.4002%
+Source Step = 99.434%
+Source Step = 99.4677%
+Source Step = 99.5015%
+Source Step = 99.5352%
+Singular matrix:  Check node u3:8
+   Iteration No. 51
+Singular matrix:  Check node u3:8
+   Iteration No. 1
+Singular matrix:  Check node u3:8
+   Iteration No. 1
+Source Step = 99.5689%
+Singular matrix:  Check node u3:8
+   Iteration No. 1
+Singular matrix:  Check node u3:8
+   Iteration No. 1
+Singular matrix:  Check node u3:8
+   Iteration No. 1
+Singular matrix:  Check node u3:8
+   Iteration No. 1
+Source Step = 99.6027%
+Source Step = 99.6364%
+Source Step = 99.6702%
+Source Step = 99.7039%
+Source Step = 99.7377%
+Source Step = 99.7714%
+Source Step = 99.8052%
+Source Step = 99.8389%
+Source Step = 99.8727%
+Source Step = 99.9064%
+Singular matrix:  Check node u1:8
+   Iteration No. 47
+Source Step = 99.9402%
+Singular matrix:  Check node u1:8
+   Iteration No. 1
+Singular matrix:  Check node u1:8
+   Iteration No. 1
+Singular matrix:  Check node u1:8
+   Iteration No. 1
+Singular matrix:  Check node u1:8
+   Iteration No. 1
+Singular matrix:  Check node u1:8
+   Iteration No. 1
+Singular matrix:  Check node u1:8
+   Iteration No. 1
+Singular matrix:  Check node u1:8
+   Iteration No. 1
+Source Step = 99.9739%
 Source Step = 100%
-Source stepping succeeded in finding the operating point.
-
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Singular matrix:  Check node u1:8
+   Iteration No. 51
+Singular matrix:  Check node u1:8
+   Iteration No. 1
+Source Step = 100%
+Singular matrix:  Check node u1:8
+   Iteration No. 1
+Singular matrix:  Check node u1:8
+   Iteration No. 1
+Singular matrix:  Check node u1:8
+   Iteration No. 1
+Singular matrix:  Check node u1:8
+   Iteration No. 1
+Singular matrix:  Check node u1:8
+   Iteration No. 1
+Singular matrix:  Check node u1:8
+   Iteration No. 1
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Singular matrix:  Check node u1:8
+   Iteration No. 51
+Singular matrix:  Check node u1:8
+   Iteration No. 1
+Singular matrix:  Check node u1:8
+   Iteration No. 1
+Singular matrix:  Check node u1:8
+   Iteration No. 1
+Singular matrix:  Check node u1:8
+   Iteration No. 1
+Singular matrix:  Check node u1:8
+   Iteration No. 1
+Source Step = 100%
+Singular matrix:  Check node u1:8
+   Iteration No. 1
+Singular matrix:  Check node u1:8
+   Iteration No. 1
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Singular matrix:  Check node u1:8
+   Iteration No. 51
+Singular matrix:  Check node u1:8
+   Iteration No. 1
+Singular matrix:  Check node u1:8
+   Iteration No. 1
+Singular matrix:  Check node u1:8
+   Iteration No. 1
+Singular matrix:  Check node u1:8
+   Iteration No. 1
+Singular matrix:  Check node u1:8
+   Iteration No. 1
+Singular matrix:  Check node u1:8
+   Iteration No. 1
+Source Step = 100%
+Singular matrix:  Check node u1:8
+   Iteration No. 1
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Singular matrix:  Check node u1:8
+   Iteration No. 51
+Singular matrix:  Check node u1:8
+   Iteration No. 1
+Singular matrix:  Check node u1:8
+   Iteration No. 1
+Singular matrix:  Check node u1:8
+   Iteration No. 1
+Source Step = 100%
+Singular matrix:  Check node u1:8
+   Iteration No. 1
+Singular matrix:  Check node u1:8
+   Iteration No. 1
+Singular matrix:  Check node u1:8
+   Iteration No. 1
+Singular matrix:  Check node u1:8
+   Iteration No. 1
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Singular matrix:  Check node u1:8
+   Iteration No. 51
+Source Step = 100%
+Singular matrix:  Check node u1:8
+   Iteration No. 1
+Singular matrix:  Check node u1:8
+   Iteration No. 1
+Singular matrix:  Check node u1:8
+   Iteration No. 1
+Singular matrix:  Check node u1:8
+   Iteration No. 1
+Singular matrix:  Check node u1:8
+   Iteration No. 1
+Singular matrix:  Check node u1:8
+   Iteration No. 1
+Singular matrix:  Check node u1:8
+   Iteration No. 1
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Singular matrix:  Check node u1:8
+   Iteration No. 51
+Singular matrix:  Check node u1:8
+   Iteration No. 1
+Source Step = 100%
+Singular matrix:  Check node u1:8
+   Iteration No. 1
+Singular matrix:  Check node u1:8
+   Iteration No. 1
+Singular matrix:  Check node u1:8
+   Iteration No. 1
+Singular matrix:  Check node u1:8
+   Iteration No. 1
+Singular matrix:  Check node u1:8
+   Iteration No. 1
+Singular matrix:  Check node u1:8
+   Iteration No. 1
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Singular matrix:  Check node u1:8
+   Iteration No. 51
+Singular matrix:  Check node u1:8
+   Iteration No. 1
+Singular matrix:  Check node u1:8
+   Iteration No. 1
+Singular matrix:  Check node u1:8
+   Iteration No. 1
+Singular matrix:  Check node u1:8
+   Iteration No. 1
+Singular matrix:  Check node u1:8
+   Iteration No. 1
+Singular matrix:  Check node u1:8
+   Iteration No. 1
+Singular matrix:  Check node u1:8
+   Iteration No. 1
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Singular matrix:  Check node u1:8
+   Iteration No. 51
+Singular matrix:  Check node u1:8
+   Iteration No. 1
+Singular matrix:  Check node u1:8
+   Iteration No. 1
+Singular matrix:  Check node u1:8
+   Iteration No. 1
+Singular matrix:  Check node u1:8
+   Iteration No. 1
+Singular matrix:  Check node u1:8
+   Iteration No. 1
+Singular matrix:  Check node u1:8
+   Iteration No. 1
+Source Step = 100%
+Singular matrix:  Check node u1:8
+   Iteration No. 1
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Trouble finding operating point....skipping operating point for Transient analysis.
 Ignoring empty pin current: Ix(u8:5)
 Ignoring empty pin current: Ix(u8:6)
 Ignoring empty pin current: Ix(u8:7)
@@ -112,45 +536,19 @@ Ignoring empty pin current: Ix(u8:9)
 Ignoring empty pin current: Ix(u8:10)
 Ignoring empty pin current: Ix(u8:11)
 Ignoring empty pin current: Ix(u8:12)
-Ignoring empty pin current: Ix(u8:5)
-Ignoring empty pin current: Ix(u8:6)
-Ignoring empty pin current: Ix(u8:7)
-Ignoring empty pin current: Ix(u8:8)
-Ignoring empty pin current: Ix(u8:9)
-Ignoring empty pin current: Ix(u8:10)
-Ignoring empty pin current: Ix(u8:11)
-Ignoring empty pin current: Ix(u8:12)
 
-Date: Mon Mar 25 20:08:52 2019
-Total elapsed time: 10.248 seconds.
->>>>>>> parent of 344ed83... Simplified the first order modulator
+Date: Thu Mar 28 00:03:30 2019
+Total elapsed time: 39.457 seconds.
 
 tnom = 27
 temp = 27
 method = modified trap
-<<<<<<< HEAD
-totiter = 2181745
-traniter = 2180411
-tranpoints = 961684
-accept = 659513
-rejected = 302184
-matrix size = 63
-fillins = 93
+totiter = 158909
+traniter = 0
+tranpoints = 1
+accept = 1
+rejected = 0
+matrix size = 113
+fillins = 375
 solver = Normal
-Thread vector: 11.1/9.6[2] 3.2/2.5[2] 2.6/2.3[2] 0.2/4.0[1]  2592/500
-Matrix Compiler1: 7.79 KB object code size  1.7/0.8/[0.5]
-Matrix Compiler2: 6.92 KB object code size  0.8/1.5/[0.5]
-=======
-totiter = 538522
-traniter = 535826
-tranpoints = 149370
-accept = 115969
-rejected = 33401
-matrix size = 50
-fillins = 64
-solver = Normal
-Thread vector: 15.6/7.4[4] 4.9/8.5[1] 1.9/2.8[1] 0.2/1.0[1]  2592/500
-Matrix Compiler1: 4.45 KB object code size  1.3/0.6/[0.3]
-Matrix Compiler2: 5.54 KB object code size  0.7/0.9/[0.4]
->>>>>>> parent of 344ed83... Simplified the first order modulator
 
