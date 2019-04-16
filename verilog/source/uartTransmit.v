@@ -170,7 +170,7 @@ module uartTransmitter #(parameter clks_per_bit = 8'd108)
 
                 idleSpin:
                 begin
-                    //printStatement <= txCtlFlow;
+                    printStatement <= txCtlFlow;
                     dataRead <= 1'b0;
                     adcHold <= adcInput;
                     if(txCtlFlow == 1'b1)
@@ -185,13 +185,11 @@ module uartTransmitter #(parameter clks_per_bit = 8'd108)
                         if(dataRdy == 1'b1)
                         begin
                             stateCounter <= startTransmission;
-                            //printStatement <= 1'b1;
                         end
 
                         else
                         begin
                             stateCounter <= idleSpin;
-                            printStatement <= 1'b1;
                         end
                     end
                 end
@@ -236,10 +234,8 @@ module uartTop
     wire dataRdy;
     wire[7:0] adcStream;
 
-    clk_wiz_0 systemClock(clk1, clk2, clk3, rst, pllLocked, clk);
-    clockSynthesizer #(50) div1(clk1, rst, outClock);
-    clockDivider #(50) div3(clk3, rst, streamerClk);
+    clk_wiz_0 systemClock(outClock, clk2, clk3, rst, pllLocked, clk);
 
-    binaryStreamer myStream(streamerClk, dataRead, adcInput, adcStream, dataRdy);
+    binaryStreamer myStream(clk3, dataRead, adcInput, adcStream, dataRdy);
     uartTransmitter myTransmitter(clk2, rst, adcStream, txCtlFlow, dataRdy, tx, dataRead, printStatment);
 endmodule

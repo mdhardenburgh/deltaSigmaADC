@@ -31,26 +31,24 @@ module binaryStreamer
     input rst,
     input adcInput,
 
-    output reg[7:0] adcOutput,
+    output[7:0] streamerData,
     output reg newDataReady
 );
-    
-    reg[7:0] counter;
+    c_accum_0 myAccumulator(adcInput, clk, rst, streamerData);
 
-    always@(posedge clk, posedge rst)
+    reg[31:0] counter;
+
+    always@(posedge clk)
     begin
         if(rst == 1'b1)
         begin
+            counter <= 32'b0;
             newDataReady <= 1'b0;
-            adcOutput <= 8'b0;
-            counter <= 7'b0;
         end
 
         else
         begin
-            adcOutput[counter] <= adcInput;
-
-            if(counter < 8'd8)
+            if(counter < 32'd256)
             begin
                 counter <= counter + 1'b1;
             end
@@ -61,6 +59,4 @@ module binaryStreamer
             end
         end
     end
-
-
 endmodule
