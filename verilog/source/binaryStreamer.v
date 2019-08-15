@@ -30,20 +30,31 @@ module binaryStreamer
     input clk,
     input rst,
     input adcInput,
+    input fifoReadEnable,
 
     output[7:0] streamerData,
-    output reg newDataReady
+    output fifoEmpty,
+    output fifoFull
 );
-    c_accum_0 myAccumulator(adcInput, clk, rst, streamerData);
+
+    wire[7:0] byteStream;
 
     reg[31:0] counter;
+    reg fifoWriteEnable;
+    reg accumRst;
 
-    always@(posedge clk)
+    //Instantiate IP cores
+    c_accum_0 myAccumulator(adcInput, clk, accumRst, byteStream);
+    fifo_generator_0 myFifo(clk, rst, byteStream, fifoWriteEnable, fifoReadEnable, streamerData, fifoFull, fifoEmpty);
+
+    //Decimator counter
+    always@(posedge clk, posedge rst)
     begin
         if(rst == 1'b1)
         begin
             counter <= 32'b0;
-            newDataReady <= 1'b0;
+            fifoWriteEnable <= 1'b0;
+            accumRst <= 1'b1;
         end
 
         else
@@ -51,11 +62,15 @@ module binaryStreamer
             if(counter < 32'd256)
             begin
                 counter <= counter + 1'b1;
+                fifoWriteEnable <= 1'b0;
+                accumRst <= 1'b0;
             end
 
             else
             begin
-                newDataReady <= 1'b1;
+                fifoWriteEnable <= 1'b1;
+                accumRst <= 1'b1;
+                counter <= 1'b0;
             end
         end
     end

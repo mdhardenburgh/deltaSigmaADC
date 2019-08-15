@@ -29,7 +29,7 @@
  * @input system reset 
  * @output slower clock
  **/
-module clockSynthesizer #(parameter frequencySel = 32'd50)
+module clockSynthesizer #(parameter frequencySel = 32'd167)
 (
     input clk,
     input rst,
