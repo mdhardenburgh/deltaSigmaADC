@@ -10,15 +10,20 @@ The ECAD folder contains a circuit diagram of the modulator and associated datas
 
 The verilog/source folder contains the source verilog code for the project. It is under the GPLv3 license.
 
-The verilog/digitalSignalProcessing folder is the Vivado project folder.
-
 The matlabAndSimulink folder contains the matlab code for the project. It contains: filter designer files (.fda), Xilinx coefficient files (.coe), text documents of FIR filter coefficients, simulink model of the delta sigma modulator, and various files associated with the simulink model. The file fftStreamer.m can be used to view the fft of the output of the ADC. The file uart.m can be used to view the output waveform of the file.
 
-### Bill of Materials (BOM)
+### Bill of Materials (BOM) for the second order Delta Sigma Modulator
 - Digilent Nexys 4 DDR
 - AD8044 Quad 15MHz Rail-to-Rail Amplifier
 - AD8561 Ultrafast 7ns Singl Supply Comparator
 - ADG1633 Tripple SPDT ±5V, +12V, +5V, and +3.3V Switches
+- 2x through hole 39pF ceramic capacitors
+- 9x through hole 47pF ceramic capacitors
+- 3x through hole 100pF ceramic capacitors
+- 5x through hole 100uF ceramic capacitor
+- 2x 1/8th watt through hole 100kΩ resistors
+- 1/8th watt through hole 2.2kΩ resistor
+- 1/8th watt through hole 56kΩ resistor
 - Double large breadboard
 - 3.5mm Headphone jack
 - Breadboard wires and jumpers
