@@ -4,10 +4,10 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title ""
-Date ""
-Rev ""
-Comp ""
+Title "Second Order Sigma Delta Modulator"
+Date "2019-07-29"
+Rev "0"
+Comp "Matthew Hardenburgh"
 Comment1 ""
 Comment2 ""
 Comment3 ""
@@ -824,7 +824,7 @@ F 3 "" H 4695 1775 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Bitmap
-Pos 9080 6870
+Pos 9415 6875
 Scale 1.000000
 Data
 89 50 4E 47 0D 0A 1A 0A 00 00 00 0D 49 48 44 52 00 00 03 42 00 00 00 AC 08 06 00 00 00 56 F8 1C 
